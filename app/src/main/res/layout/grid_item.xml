@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Square Box -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center">
+
+        <!-- Item Content (You can customize this part) -->
+        <TextView
+            android:id="@+id/gridItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+    </FrameLayout>
+</LinearLayout>

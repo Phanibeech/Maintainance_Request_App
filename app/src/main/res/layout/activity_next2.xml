@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title Bar (Replace with your custom title bar) -->
+    <LinearLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:background="#FFC107"
+        android:padding="8dp">
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintenance Request"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Text Box -->
+    <EditText
+        android:id="@+id/textBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBar"
+        android:layout_margin="16dp"
+        android:hint="Preferred time for Resolving"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:background="#FFFFFF"/>
+
+    <!-- Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBox"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <!-- Radio Button 1 -->
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9 pm to 4pm"/>
+
+        <!-- Radio Button 2 -->
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4pm to 10pm"
+            android:layout_below="@id/radioButton1"/>
+    </RadioGroup>
+
+    <!-- Another Text Box -->
+    <EditText
+        android:id="@+id/anotherTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_margin="16dp"
+        android:hint="Additional Information"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:background="#FFFFFF"/>
+
+    <!-- Attach Image Option (Replace with your image attachment UI) -->
+    <!-- You can use a button or an ImageView here for image attachment -->
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anotherTextBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Submit"/>
+
+</RelativeLayout>

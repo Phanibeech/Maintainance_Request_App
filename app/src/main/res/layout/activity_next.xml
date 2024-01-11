@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView to display the selected item -->
+    <TextView
+        android:id="@+id/selectedItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="10mm"
+        android:text="HOUSE MAINTAINANCE REQUEST"
+        android:gravity="center"
+        android:background="#FFC107"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+
+
+    <!-- Text Box 1 (Heading) -->
+    <TextView
+        android:id="@+id/textBoxHeading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleBar"
+        android:layout_centerHorizontal="true"
+        android:text="Raise Maintainance Request"
+        android:textSize="18sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="19dp"/>
+
+    <!-- Text Box 2 -->
+    <TextView
+        android:id="@+id/textBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBoxHeading1"
+        android:layout_centerHorizontal="true"
+        android:text="Type of Issue:"
+        android:gravity="start"
+        android:textSize="16sp"/>
+
+    <!-- Text Entry Box 1 -->
+    <EditText
+        android:id="@+id/textEntryBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBox2"
+        android:layout_margin="16dp"
+        android:hint="Enter Text"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp"/>
+
+    <!-- Text Box 3 -->
+    <TextView
+        android:id="@+id/textBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textEntryBox1"
+        android:layout_centerHorizontal="true"
+        android:text="Urgency of issue"
+        android:gravity="start"
+        android:textSize="16sp"/>
+
+    <!-- Dropdown Menu -->
+    <Spinner
+        android:id="@+id/dropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBox3"
+        android:layout_margin="16dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp"/>
+
+    <!-- Text Box 4 -->
+    <TextView
+        android:id="@+id/textBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dropdownMenu"
+        android:layout_centerHorizontal="true"
+        android:text="Description of Issue :"
+        android:gravity="start"
+        android:textSize="16sp"/>
+
+    <!-- Text Entry Box 2 -->
+    <EditText
+        android:id="@+id/textEntryBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textBox4"
+        android:layout_margin="16dp"
+        android:hint="Enter Text"
+        android:padding="2.5mm"/>
+
+    <!-- Done Button -->
+
+    <!-- Next Button (Initially Disabled) -->
+
+    <TextView
+        android:id="@+id/summaryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summary:"
+        android:textColor="#000000"
+        android:layout_below="@id/textEntryBox2"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Review" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Next"
+        android:enabled="false"
+        android:onClick="openNextPage"/>
+</RelativeLayout>

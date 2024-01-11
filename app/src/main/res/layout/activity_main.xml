@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title Bar -->
+    <TextView
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="10mm"
+        android:text="Raghavv Gupta Konda"
+        android:gravity="center"
+        android:background="#FF0000"/>
+
+    <!-- Text Box -->
+    <EditText
+        android:id="@+id/textBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Santhu Srihitha"
+        android:gravity="center"
+        android:layout_below="@id/titleBar"/>
+
+    <!-- Grid View -->
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:padding="10dp"
+        android:layout_below="@id/textBox"/>
+
+    <!-- Text View to display the selected item -->
+    <TextView
+        android:id="@+id/selectedItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridView"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+    <!-- "Next" button -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Next"
+        android:enabled="false"
+        android:onClick="openNextPage"/>
+</RelativeLayout>
